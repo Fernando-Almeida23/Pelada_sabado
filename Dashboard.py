@@ -7,7 +7,7 @@ st.set_page_config(layout= 'wide')
 st.title('Pelada de Sábado')
 
 # importar os dados
-url = 'https://github.com/Fernando-Almeida23/Pelada_sabado/blob/main/pelada%20sabado%2002%20semestre.xlsx'
+url = 'https://github.com/Fernando-Almeida23/Pelada_sabado/blob/main/pelada_sabado_02_semestre.xlsx'
 planilha = 'Jogadores'
 tabela = pd.read_excel(url, planilha)
 tabela.head()
