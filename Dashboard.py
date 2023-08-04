@@ -273,7 +273,7 @@ with aba1:
         st.write('Tarde de Vitoria')
         st.dataframe(data = tarde_vitoria_mensal.style.apply(axis=1, func = mudar_cor_tarde_vitoria_mensal), height=750)
         st.write('Craque do Dia')
-        st.dataframe(data=craque_do_dia.style.apply(axis=1, func=mudar_cor_craque_do_dia), height=1000)
+        st.dataframe(data=craque_do_dia.style.apply(axis=1, func=mudar_cor_craque_do_dia), height=1400)
 
 with aba2:
     st.write('Goleiros Geral')
