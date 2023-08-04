@@ -8,7 +8,7 @@ st.title('Pelada de Sábado')
 
 # importar os dados
 
-tabela = pd.read_excel(r'd:\Users\Fernando.Resende\Desktop\pelada_sabado_02_semestre.xlsx')
+tabela = pd.read_csv('https://raw.githubusercontent.com/Fernando-Almeida23/Pelada_sabado/main/pelada_sabado_02_semestre.csv')
 tabela.head()
 
 # # Arrumando tabela
