@@ -7,7 +7,7 @@ st.set_page_config(layout= 'wide')
 st.title('Pelada de Sábado')
 
 # importar os dados
-tabela = pd.read_excel(r'C:\Users\BR\Desktop\pelada 02 semestre\pelada sabado 02 semestre.xlsx')
+tabela = pd.read_excel(r'pelada sabado 02 semestre.xlsx')
 tabela.head()
 
 # # Arrumando tabela
