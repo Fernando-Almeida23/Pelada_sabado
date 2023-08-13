@@ -11,7 +11,7 @@ st.title('Pelada de Sábado')
 # importar os dados
 
 tabela = pd.read_csv('https://raw.githubusercontent.com/Fernando-Almeida23/Pelada_sabado/main/pelada_sabado_02_semestre.csv')
-
+tabela.drop(axis = 1, columns = 'Unnamed: 0', inplace = True)
 
 # # Arrumando tabela
 
