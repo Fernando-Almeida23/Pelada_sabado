@@ -6,12 +6,12 @@ st.set_page_config(layout= 'wide')
 
 st.title('Pelada de Sábado')
 
-st.write('Última atualização dia 13/08/2023')
+
 
 # importar os dados
 
 tabela = pd.read_csv('https://raw.githubusercontent.com/Fernando-Almeida23/Pelada_sabado/main/pelada_sabado_02_semestre.csv')
-tabela.head()
+
 
 # # Arrumando tabela
 
