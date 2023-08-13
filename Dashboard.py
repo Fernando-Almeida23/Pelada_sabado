@@ -6,6 +6,8 @@ st.set_page_config(layout= 'wide')
 
 st.title('Pelada de Sábado')
 
+st.write('Última atualização dia 13/08/2023')
+
 # importar os dados
 
 tabela = pd.read_csv('https://raw.githubusercontent.com/Fernando-Almeida23/Pelada_sabado/main/pelada_sabado_02_semestre.csv')
@@ -66,7 +68,8 @@ goleiros = ['Matheus',
             'Marco Aurelio',
            'Milton',
             'Caio',
-            'Lucian']
+            'Lucian',
+            'Chelin']
 goleiro_selecao = tabela['Jogadores'].isin(goleiros)
 tabela_goleiro = tabela[goleiro_selecao]
 tabela_goleiro.drop(axis = 1, columns = ['Tarde de Vitoria', 'La barca', 'Craque do Dia'], inplace = True)
