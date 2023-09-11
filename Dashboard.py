@@ -73,7 +73,8 @@ goleiros = ['Matheus',
 goleiro_selecao = tabela['Jogadores'].isin(goleiros)
 tabela_goleiro = tabela[goleiro_selecao]
 tabela_goleiro.drop(axis = 1, columns = ['Tarde de Vitoria', 'La barca', 'Craque do Dia'], inplace = True)
-tabela_goleiro['Media Gols'] = round((tabela_goleiro['Gols Sofridos'] / tabela_goleiro['Partidas']),2)
+tabela_goleiro['Media Gols'] = tabela_goleiro['Gols Sofridos'] / tabela_goleiro['Partidas']
+tabela_goleiro['Media Gols'] = round(tabela_goleiro['Media Gols'], 2)
 
 tabela_selecao_avulso = tabela['Jogadores'].isin(goleiros)
 tabela = tabela[-tabela_selecao_avulso]
