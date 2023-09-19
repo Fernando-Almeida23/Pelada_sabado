@@ -67,7 +67,7 @@ goleiros = ['Matheus',
             'Ochoa',
             'Marco Aurelio',
            'Milton',
-            'Caio',
+            'Caio Goleiro',
             'Lucian',
             'Chelin']
 goleiro_selecao = tabela['Jogadores'].isin(goleiros)
