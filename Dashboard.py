@@ -153,11 +153,11 @@ def mudar_cor_goleiro(linha):
 
 def mudar_cor_mensal(linha):
     if linha['Jogadores'] == tabela_mensal['Jogadores'][1]:
-        return ['background-color: lime'] * len(linha)
+        return ['background-color: #BEFEAC'] * len(linha)
     else:
         for i in range(2,6):
             if linha['Jogadores'] == tabela_mensal['Jogadores'][i]:
-                return ['background-color: yellow'] * len(linha)
+                return ['background-color: #FFFFA3'] * len(linha)
             else:
                 for w in range(0,4):
                     if linha['Jogadores'] == tabela_mensal['Jogadores'][numero_jogadores_mensal-w]:
