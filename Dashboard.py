@@ -161,7 +161,7 @@ def mudar_cor_mensal(linha):
             else:
                 for w in range(0,4):
                     if linha['Jogadores'] == tabela_mensal['Jogadores'][numero_jogadores_mensal-w]:
-                        return ['background-color: red'] * len(linha)
+                        return ['background-color: #FD6767'] * len(linha)
 
 
 def mudar_cor_artileiro(linha):
