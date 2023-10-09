@@ -133,132 +133,175 @@ gols_sofridos_media.index = range(1, (numero_goleiro+1))
 
 def mudar_cor_tabela(linha):
     if linha['Jogadores'] == tabela['Jogadores'][1]:
-        return ['background-color: lime'] * len(linha)
+        return ['background-color: lime; font-weight: bold'] * len(linha)
     else:
         for i in range(2,6):
             if linha['Jogadores'] == tabela['Jogadores'][i]:
-                return ['background-color: yellow'] * len(linha)
+                return ['background-color: yellow; font-weight: bold'] * len(linha)
             else:
                 for w in range(0,10):
                     if linha['Jogadores'] == tabela['Jogadores'][numero_jogadores-w]:
-                        return ['background-color: red'] * len(linha)
+                        return ['background-color: red; font-weight: bold'] * len(linha)
+                    else:
+                        for i in range(6,numero_jogadores-9):
+                            if linha['Jogadores'] == tabela['Jogadores'][i]:
+                                return ['font-weight: bold'] * len(linha)
 
 
 def mudar_cor_goleiro(linha):
     if linha['Jogadores'] == tabela_goleiro['Jogadores'][1]:
-        return ['background-color: lime'] * len(linha)
+        return ['background-color: lime; font-weight: bold'] * len(linha)
     else:
         if linha['Jogadores'] == tabela_goleiro['Jogadores'][numero_goleiro]:
-                return ['background-color: red'] * len(linha)
+                return ['background-color: red; font-weight: bold'] * len(linha)
+        else:
+            for i in range(2,numero_goleiro):
+                return ['font-weight: bold'] * len(linha)
 
 def mudar_cor_mensal(linha):
     if linha['Jogadores'] == tabela_mensal['Jogadores'][1]:
-        return ['background-color: lime'] * len(linha)
+        return ['background-color: lime; font-weight: bold'] * len(linha)
     else:
         for i in range(2,6):
             if linha['Jogadores'] == tabela_mensal['Jogadores'][i]:
-                return ['background-color: yellow'] * len(linha)
+                return ['background-color: yellow; font-weight: bold'] * len(linha)
             else:
                 for w in range(0,4):
                     if linha['Jogadores'] == tabela_mensal['Jogadores'][numero_jogadores_mensal-w]:
-                        return ['background-color: red'] * len(linha)
+                        return ['background-color: red; font-weight: bold'] * len(linha)
+                    else:
+                        for i in range(6,17):
+                            if linha['Jogadores'] == tabela['Jogadores'][i]:
+                                return ['font-weight: bold'] * len(linha)
+
 
 
 def mudar_cor_artileiro(linha):
     if linha['Jogadores'] == artileiro['Jogadores'][1]:
-        return ['background-color: lime'] * len(linha)
+        return ['background-color: lime; font-weight: bold'] * len(linha)
     else:
         for i in range(2,6):
             if linha['Jogadores'] == artileiro['Jogadores'][i]:
-                return ['background-color: yellow'] * len(linha)
+                return ['background-color: yellow; font-weight: bold'] * len(linha)
             else:
                 for w in range(0,10):
                     if linha['Jogadores'] == artileiro['Jogadores'][numero_jogadores-w]:
-                        return ['background-color: red'] * len(linha)
+                        return ['background-color: red; font-weight: bold'] * len(linha)
+                    else:
+                        for i in range(6,numero_jogadores-9):
+                            if linha['Jogadores'] == tabela['Jogadores'][i]:
+                                return ['font-weight: bold'] * len(linha)
 
 
 def mudar_cor_artileiro_mensal(linha):
     if linha['Jogadores'] == artileiro_mensal['Jogadores'][1]:
-        return ['background-color: lime'] * len(linha)
+        return ['background-color: lime; font-weight: bold'] * len(linha)
     else:
         for i in range(2,6):
             if linha['Jogadores'] == artileiro_mensal['Jogadores'][i]:
-                return ['background-color: yellow'] * len(linha)
+                return ['background-color: yellow; font-weight: bold'] * len(linha)
             else:
                 for w in range(0,4):
                     if linha['Jogadores'] == artileiro_mensal['Jogadores'][numero_jogadores_mensal-w]:
-                        return ['background-color: red'] * len(linha)
+                        return ['background-color: red; font-weight: bold'] * len(linha)
+                    else:
+                        for i in range(6,17):
+                            if linha['Jogadores'] == tabela['Jogadores'][i]:
+                                return ['font-weight: bold'] * len(linha)
 
 
 def mudar_cor_tarde_vitoria(linha):
     if linha['Jogadores'] == tarde_vitoria['Jogadores'][1]:
-        return ['background-color: lime'] * len(linha)
+        return ['background-color: lime; font-weight: bold'] * len(linha)
     else:
         for i in range(2,6):
             if linha['Jogadores'] == tarde_vitoria['Jogadores'][i]:
-                return ['background-color: yellow'] * len(linha)
+                return ['background-color: yellow; font-weight: bold'] * len(linha)
             else:
                 for w in range(0,10):
                     if linha['Jogadores'] == tarde_vitoria['Jogadores'][numero_jogadores-w]:
-                        return ['background-color: red'] * len(linha)
+                        return ['background-color: red; font-weight: bold'] * len(linha)
+                    else:
+                        for i in range(6,numero_jogadores-9):
+                            if linha['Jogadores'] == tabela['Jogadores'][i]:
+                                return ['font-weight: bold'] * len(linha)
 
 
 def mudar_cor_tarde_vitoria_mensal(linha):
     if linha['Jogadores'] == tarde_vitoria_mensal['Jogadores'][1]:
-        return ['background-color: lime'] * len(linha)
+        return ['background-color: lime; font-weight: bold'] * len(linha)
     else:
         for i in range(2,6):
             if linha['Jogadores'] == tarde_vitoria_mensal['Jogadores'][i]:
-                return ['background-color: yellow'] * len(linha)
+                return ['background-color: yellow; font-weight: bold'] * len(linha)
             else:
                 for w in range(0,4):
                     if linha['Jogadores'] == tarde_vitoria_mensal['Jogadores'][numero_jogadores_mensal-w]:
-                        return ['background-color: red'] * len(linha)
+                        return ['background-color: red; font-weight: bold'] * len(linha)
+                    else:
+                        for i in range(6,17):
+                            if linha['Jogadores'] == tabela['Jogadores'][i]:
+                                return ['font-weight: bold'] * len(linha)
 
 
 def mudar_cor_la_barca(linha):
     if linha['Jogadores'] == la_barca['Jogadores'][1]:
-        return ['background-color: lime'] * len(linha)
+        return ['background-color: lime; font-weight: bold'] * len(linha)
     else:
         for i in range(2,6):
             if linha['Jogadores'] == la_barca['Jogadores'][i]:
-                return ['background-color: yellow'] * len(linha)
+                return ['background-color: yellow; font-weight: bold'] * len(linha)
             else:
                 for w in range(0,10):
                     if linha['Jogadores'] == la_barca['Jogadores'][numero_jogadores-w]:
-                        return ['background-color: red'] * len(linha)
+                        return ['background-color: red; font-weight: bold'] * len(linha)
+                    else:
+                        for i in range(6,numero_jogadores-9):
+                            if linha['Jogadores'] == tabela['Jogadores'][i]:
+                                return ['font-weight: bold'] * len(linha)
 
 
 def mudar_cor_la_barca_mensal(linha):
     if linha['Jogadores'] == la_barca_mensal['Jogadores'][1]:
-        return ['background-color: lime'] * len(linha)
+        return ['background-color: lime; font-weight: bold'] * len(linha)
     else:
         for i in range(2,6):
             if linha['Jogadores'] == la_barca_mensal['Jogadores'][i]:
-                return ['background-color: yellow'] * len(linha)
+                return ['background-color: yellow; font-weight: bold'] * len(linha)
             else:
                 for w in range(0,4):
                     if linha['Jogadores'] == la_barca_mensal['Jogadores'][numero_jogadores_mensal-w]:
-                        return ['background-color: red'] * len(linha)
+                        return ['background-color: red; font-weight: bold'] * len(linha)
+                    else:
+                        for i in range(6,17):
+                            if linha['Jogadores'] == tabela['Jogadores'][i]:
+                                return ['font-weight: bold'] * len(linha)
 
 def mudar_cor_craque_do_dia(linha):
     if linha['Jogadores'] == craque_do_dia['Jogadores'][1]:
-        return ['background-color: lime'] * len(linha)
+        return ['background-color: lime; font-weight: bold'] * len(linha)
     else:
         for i in range(2,6):
             if linha['Jogadores'] == craque_do_dia['Jogadores'][i]:
-                return ['background-color: yellow'] * len(linha)
+                return ['background-color: yellow; font-weight: bold'] * len(linha)
             else:
                 for w in range(0,10):
                     if linha['Jogadores'] == craque_do_dia['Jogadores'][numero_tabela_geral-w]:
-                        return ['background-color: red'] * len(linha)
+                        return ['background-color: red; font-weight: bold'] * len(linha)
+                    else:
+                        for i in range(6,numero_tabela_geral-9):
+                            if linha['Jogadores'] == tabela['Jogadores'][i]:
+                                return ['font-weight: bold'] * len(linha)
 
 def mudar_cor_goleiro_gols_sofrido(linha):
     if linha['Jogadores'] == gols_sofridos_media['Jogadores'][1]:
-        return ['background-color: lime'] * len(linha)
+        return ['background-color: lime; font-weight: bold'] * len(linha)
     else:
         if linha['Jogadores'] == gols_sofridos_media['Jogadores'][numero_goleiro]:
-                return ['background-color: red'] * len(linha)
+                return ['background-color: red; font-weight: bold'] * len(linha)
+        else:
+            for i in range(2,numero_goleiro):
+                return ['font-weight: bold'] * len(linha)
 
 aba1, aba2, aba3 = st.tabs(['Mensal','Goleiro','Geral'])
 
