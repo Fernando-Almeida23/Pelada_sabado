@@ -5,7 +5,7 @@ import pandas as pd
 st.set_page_config(layout= 'wide')
 
 st.title('Pelada de Sábado')
-st.write('Última Atualização 16/10/2023')
+st.write('Última Atualização 23/10/2023')
 
 
 # importar os dados
@@ -46,7 +46,7 @@ mensal = ['David',
     'Euller',
     'Juscielio',
     'Michel',
-    'Davidson',
+    'Digão',
     'Du',
     'Caio']
 mensal_selecao = tabela['Jogadores'].isin(mensal)
