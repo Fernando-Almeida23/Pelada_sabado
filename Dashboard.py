@@ -10,7 +10,7 @@ st.write('Última Atualização 04/12/2023')
 
 # importar os dados
 
-tabela = pd.read_csv('https://raw.githubusercontent.com/Fernando-Almeida23/Pelada_sabado/main/pelada_sabado_02_semestre.csv')
+tabela = pd.read_csv('https://raw.githubusercontent.com/Fernando-Almeida23/Pelada_sabado/main/pelada_sabado_2024_01.csv')
 tabela.drop(axis = 1, columns = 'Unnamed: 0', inplace = True)
 
 # # Arrumando tabela
@@ -40,7 +40,7 @@ mensal = ['David',
     'Cabeleira',
     'Corinthiano',
     'Peixe',
-    'Joazinho',
+    'Euzebio',
     'Athos',
     'Jorge',
     'Euller',
@@ -48,7 +48,7 @@ mensal = ['David',
     'Michel',
     'Digão',
     'Du',
-    'Caio']
+    'Fernando']
 mensal_selecao = tabela['Jogadores'].isin(mensal)
 tabela_mensal = tabela[mensal_selecao]
 tabela_mensal.drop(axis = 1, columns = 'Gols Sofridos', inplace = True)
