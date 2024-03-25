@@ -5,7 +5,7 @@ import pandas as pd
 st.set_page_config(layout= 'wide')
 
 st.title('Pelada de Sábado')
-st.write('Última Atualização 18/03/2024')
+st.write('Última Atualização 25/03/2024')
 
 
 # importar os dados
