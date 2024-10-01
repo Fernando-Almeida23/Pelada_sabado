@@ -39,8 +39,7 @@ mensal = ['David',
     'Philipe',
     'Cabeleira',
     'Corinthiano',
-    'Peixe',
-    'Euzebio',
+    'Peixe',    
     'Athos',
     'Jorge',
     'Euler',
@@ -48,7 +47,8 @@ mensal = ['David',
     'Michel',
     'Digão',
     'Du',
-    'Fernando']
+    'Fernando',
+    'Eder']
 mensal_selecao = tabela['Jogadores'].isin(mensal)
 tabela_mensal = tabela[mensal_selecao]
 tabela_mensal.drop(axis = 1, columns = 'Gols Sofridos', inplace = True)
