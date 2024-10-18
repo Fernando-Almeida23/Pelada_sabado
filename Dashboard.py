@@ -270,7 +270,7 @@ with aba1:
     st.dataframe(data=tabela_mensal.style.apply(axis=1, func=mudar_cor_mensal), height=750)
     coluna1, coluna2 = st.columns(2)
     with coluna1:
-        st.write('Artileiro')
+        st.write('Artilheiro')
         st.dataframe(data = artileiro_mensal.style.apply(axis=1, func = mudar_cor_artileiro_mensal), height= 750)
         st.write('La barca')
         st.dataframe(data=la_barca_mensal.style.apply(axis=1, func=mudar_cor_la_barca_mensal), height=750)
