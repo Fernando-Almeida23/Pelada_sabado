@@ -70,7 +70,8 @@ goleiros = ['Matheus',
             'Caio Goleiro',
             'Lucian',
             'Chelin', 
-            'Yuri']
+            'Yuri',
+            'Neneca']
 goleiro_selecao = tabela['Jogadores'].isin(goleiros)
 tabela_goleiro = tabela[goleiro_selecao]
 tabela_goleiro.drop(axis = 1, columns = ['Tarde de Vitoria', 'La barca', 'Craque do Dia'], inplace = True)
