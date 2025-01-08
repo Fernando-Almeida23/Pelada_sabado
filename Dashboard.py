@@ -10,7 +10,7 @@ st.write('Última Atualização 18/06/2024')
 
 # importar os dados
 
-tabela = pd.read_csv('https://github.com/Fernando-Almeida23/Pelada_sabado/blob/main/pelada_sabado_2025_01.csv')
+tabela = pd.read_csv('https://raw.githubusercontent.com/Fernando-Almeida23/Pelada_sabado/refs/heads/main/pelada_sabado_2025_01.csv')
 tabela.drop(axis = 1, columns = 'Unnamed: 0', inplace = True)
 
 # # Arrumando tabela
