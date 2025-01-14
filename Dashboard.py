@@ -132,7 +132,7 @@ gols_sofridos_media.index = range(1, (numero_goleiro+1))
 
 # Separando baseado em gols sofridos
 melhor_goleiro = tabela_goleiro.loc[:,['Jogadores','Melhor Goleiro']]
-melhor_goleiro.sort_values(by = 'Melhor Goleiro', ascending= True, inplace = True)
+melhor_goleiro.sort_values(by = 'Melhor Goleiro', ascending= False, inplace = True)
 melhor_goleiro.index = range(1, (numero_goleiro+1))
 
 
