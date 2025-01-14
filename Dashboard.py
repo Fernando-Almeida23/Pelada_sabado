@@ -81,7 +81,7 @@ tabela_goleiro['Media Gols'] = round(tabela_goleiro['Media Gols'], 2)
 tabela_selecao_avulso = tabela['Jogadores'].isin(goleiros)
 tabela = tabela[-tabela_selecao_avulso]
 
-tabela.drop(axis = 1, columns = 'Gols Sofridos', inplace = True)
+tabela.drop(axis = 1, columns = ['Gols Sofridos', 'Melhor Goleiro'], inplace = True)
 
 # contando quantos jogadores tem em cada tabela
 numero_jogadores = tabela['Jogadores'].count()
@@ -129,6 +129,11 @@ la_barca_mensal.index = range(1, (numero_jogadores_mensal+1))
 gols_sofridos_media = tabela_goleiro.loc[:,['Jogadores','Media Gols']]
 gols_sofridos_media.sort_values(by = 'Media Gols', ascending= True, inplace = True)
 gols_sofridos_media.index = range(1, (numero_goleiro+1))
+
+# Separando baseado em gols sofridos
+melhor_goleiro = tabela_goleiro.loc[:,['Jogadores','Melhor Goleiro']]
+melhor_goleiro.sort_values(by = 'Melhor Goleiro', ascending= True, inplace = True)
+melhor_goleiro.index = range(1, (numero_goleiro+1))
 
 
 # # Funções Colorir tabela
@@ -261,6 +266,13 @@ def mudar_cor_goleiro_gols_sofrido(linha):
     else:
         if linha['Jogadores'] == gols_sofridos_media['Jogadores'][numero_goleiro]:
                 return ['background-color: red'] * len(linha)
+        
+def mudar_cor_melhor_goleiro(linha):
+    if linha['Jogadores'] == melhor_goleiro['Jogadores'][1]:
+        return ['background-color: lime'] * len(linha)
+    else:
+        if linha['Jogadores'] == melhor_goleiro['Jogadores'][numero_goleiro]:
+                return ['background-color: red'] * len(linha)
 
 aba1, aba2, aba3 = st.tabs(['Mensal','Goleiro','Geral'])
 
@@ -286,6 +298,8 @@ with aba2:
     st.dataframe(data = tabela_goleiro.style.apply(axis=1, func = mudar_cor_goleiro), height=250)
     st.write('Media de gols sofridos')
     st.dataframe(data = gols_sofridos_media.style.apply(axis=1, func = mudar_cor_goleiro_gols_sofrido), height=250)
+    st.write('Melhor goleiro')
+    st.dataframe(data = melhor_goleiro.style.apply(axis=1, func = mudar_cor_melhor_goleiro), height=250)
 
 with aba3:
     st.write('Tabela Geral')
