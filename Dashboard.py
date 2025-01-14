@@ -51,7 +51,7 @@ mensal = ['David',
     'Eder']
 mensal_selecao = tabela['Jogadores'].isin(mensal)
 tabela_mensal = tabela[mensal_selecao]
-tabela_mensal.drop(axis = 1, columns = 'Gols Sofridos', inplace = True)
+tabela_mensal.drop(axis = 1, columns = ['Gols Sofridos', 'Melhor Goleiro'], inplace = True)
 
 numero_jogadores = tabela['Jogadores'].count()
 
