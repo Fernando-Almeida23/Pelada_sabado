@@ -10,7 +10,7 @@ st.write('Última Atualização 18/06/2024')
 
 # importar os dados
 
-tabela = pd.read_csv('https://raw.githubusercontent.com/Fernando-Almeida23/Pelada_sabado/refs/heads/main/pelada_sabado_2025_02.csv')
+tabela = pd.read_csv('https://raw.githubusercontent.com/Fernando-Almeida23/Pelada_sabado/refs/heads/main/pelada_sabado_2026_01.csv')
 tabela.drop(axis = 1, columns = 'Unnamed: 0', inplace = True)
 
 # # Arrumando tabela
@@ -71,7 +71,8 @@ goleiros = ['Matheus',
             'Lucian',
             'Chelin', 
             'Yuri',
-            'Neneca']
+            'Neneca',
+            'Claudinei']
 goleiro_selecao = tabela['Jogadores'].isin(goleiros)
 tabela_goleiro = tabela[goleiro_selecao]
 tabela_goleiro.drop(axis = 1, columns = ['Tarde de Vitoria', 'La barca', 'Craque do Dia'], inplace = True)
