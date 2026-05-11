@@ -31,7 +31,7 @@ numero_tabela_geral
 # Lista de jogadores mensais
 mensal = ['David',
     'Marcelão',
-    'Boneco',
+    'Caio',
     'Vander',
     'Heider',
     'Leandrinho',
