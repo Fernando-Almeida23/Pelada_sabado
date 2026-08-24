@@ -29,7 +29,7 @@ numero_tabela_geral = tabela['Jogadores'].count()
 numero_tabela_geral
 
 # Lista de jogadores mensais
-mensal = ['David',
+mensal = ['Ismael',
     'Marcelão',
     'Caio',
     'Vander',
@@ -42,11 +42,11 @@ mensal = ['David',
     'Peixe',    
     'Athos',
     'Jorge',
-    'Euler',
+    'Marlinho',
     'Juscielio',
     'Eduardo',
     'Digão',
-    'Leah',
+    'Leandrão',
     'Fernando',
     'Eder']
 mensal_selecao = tabela['Jogadores'].isin(mensal)
